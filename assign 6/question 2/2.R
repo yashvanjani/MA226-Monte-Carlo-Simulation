@@ -1,0 +1,25 @@
+f<-function()
+{
+	u<-runif(50)
+	v<-array(50);
+	for(j in 1:50)
+	{
+		i=0;
+		p=exp(-2);
+		f=p;
+		while(u[i]>f)
+		{
+			p=2*p/(i+1);
+			f=f+p;
+			i=i+1;
+		}
+		v[j]=i;
+	}
+	print(v)
+	png("assign7q2.png");
+	hist(v,freq=F,col="red");
+	dev.off();
+	png("q2cdf.png");
+	plot(ecdf(v),col="red");
+	dev.off();
+}

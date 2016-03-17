@@ -1,0 +1,7 @@
+Number of values accepted for  100 numbers is  84 
+Rejection probability =   0.16 
+Number of values accepted for  500 numbers is  392 
+Rejection probability =   0.216 
+Number of values accepted for  10000 numbers is  7813 
+Rejection probability =   0.2187 
+

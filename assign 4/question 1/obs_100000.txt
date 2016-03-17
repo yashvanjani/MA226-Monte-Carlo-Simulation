@@ -1,0 +1,5 @@
+Mean :  -0.005000195 
+Standard Deviation :  1.001886 
+Observed Acceptance probability :  0.7607643 
+Theoritical Acceptance probability :  0.7601735 
+

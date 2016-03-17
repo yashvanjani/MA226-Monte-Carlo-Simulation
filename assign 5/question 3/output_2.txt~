@@ -1,0 +1,12 @@
+ For n =  100  The time taken by Marsaglia Bray method
+   user  system elapsed 
+  0.001   0.000   0.001 
+
+ For n =  500  The time taken by Marsaglia Bray method
+   user  system elapsed 
+  0.005   0.001   0.006 
+
+ For n =  10000  The time taken by Marsaglia Bray method
+   user  system elapsed 
+  0.198   0.007   0.206 
+

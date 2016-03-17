@@ -1,0 +1,3 @@
+Mean of the distribution : 0.994363
+Min = 0
+Max : 5.13151

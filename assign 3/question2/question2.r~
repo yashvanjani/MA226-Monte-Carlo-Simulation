@@ -1,0 +1,38 @@
+m<-c(2^17,2^19,2^23,2^27,2^29);
+a<-c(167,93,7,123,135);
+b<-c(371,33,294,4,357);
+x<-c(55,29,435,99,123);
+E<-matrix(log(0.5),nrow=5000,ncol=5);
+freq<-array(0,50);
+u<-array(0,5);
+for(j in 1:5)
+{
+	for(i in 1:5000)
+	{
+		x[j]<-(a[j]*x[j]+b[j])%%m[j];
+		u[j]<-as.double(x[j])/m[j];
+		if(u[j]<0.0001)
+		{
+			i<-i-1;
+		}
+		else
+		{
+			E[i,j]<- log(u[j]);
+		}
+	}
+}
+G<-array(0,5000);
+for(i in 1:5000)
+{
+	G[i]<-sum(E[i,]);
+	G[i]<- -0.2*G[i];
+	e<-as.integer(G[i]*10);
+	freq[e+1]<-freq[e+1]+1;
+}
+M<-mean(G);
+max<-max(G);
+min<-min(G);
+cat("Max is:",max,"\n")
+cat("min is:",min,"\n")
+cat("mean is:",M,"\n")
+barplot(freq,main="X ~ Gamma(5,5)", xlab="X",ylab="Frequency",xlim=c(0,40),ylim=c(0,500),col="darkblue");

@@ -1,0 +1,5 @@
+Autocorrelation with lag 1 for 1000 random numbers = 0.00861274
+Autocorrelation with lag 2 for 1000 random numbers = -0.040237
+Autocorrelation with lag 3 for 1000 random numbers = 0.0289122
+Autocorrelation with lag 4 for 1000 random numbers = -0.00226832
+Autocorrelation with lag 5 for 1000 random numbers = -0.0380737

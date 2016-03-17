@@ -1,0 +1,12 @@
+ For n =  1000 The time taken by Box muller method
+   user  system elapsed 
+  0.011   0.000   0.011 
+
+ For n =  10000 The time taken by Box muller method
+   user  system elapsed 
+  0.254   0.000   0.253 
+
+ For n =  1e+05 The time taken by Box muller method
+   user  system elapsed 
+ 31.498   2.757  34.241 
+
