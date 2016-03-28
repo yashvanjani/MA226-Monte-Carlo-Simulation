@@ -1,0 +1,21 @@
+For a =  -0.25 
+The mean of X1 is  4.967631 
+The mean of X2 is  8.030552 
+The variance of X1 is  1.02416 
+The variance of X2 is  16.0848 
+The covariance is  -0.6624957 
+The correlation is  -0.1632268 
+For a =  0 
+The mean of X1 is  4.967631 
+The mean of X2 is  8.014367 
+The variance of X1 is  1.02416 
+The variance of X2 is  15.67834 
+The covariance is  -0.1504157 
+The correlation is  -0.03753697 
+For a =  0.25 
+The mean of X1 is  4.967631 
+The mean of X2 is  7.998183 
+The variance of X1 is  1.02416 
+The variance of X2 is  15.78397 
+The covariance is  0.3616643 
+The correlation is  0.08995259
