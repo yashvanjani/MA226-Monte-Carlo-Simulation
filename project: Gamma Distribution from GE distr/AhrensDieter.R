@@ -15,7 +15,7 @@ f<-function(x,alpha)
 {
 	return(exp(-x)/gamma(alpha)*x^(alpha-1))
 }
-alpha<-0.7 # arbitrary
+alpha<-0.4 # arbitrary
 gamma_alpha<-gamma(alpha)  #gamma(alpha) calculated for g(x), used gamma function predefined in R
 NoOfRand<-10000
 gammadist<-vector("numeric")

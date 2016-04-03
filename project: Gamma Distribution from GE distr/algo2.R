@@ -7,7 +7,7 @@ func_b<-function(x)
 	return(((1-exp(-0.5))^x)+(x*exp(-1)/(2^x)))
 }
 NoOfRand<-10000
-alpha<-0.7 # arbitrary
+alpha<-0.4 # arbitrary
 a<-func_a(alpha)
 b<-func_b(alpha)
 j<-0

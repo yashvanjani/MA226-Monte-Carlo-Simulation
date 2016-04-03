@@ -3,7 +3,7 @@ noofrand <- 10000
 u1 <- runif(noofrand, min=0, max=1)
 
 # Generating Generalized Exponential distribution
-alpha <- 0.5	#arbit
+alpha <- 0.4	#arbit
 X <- -2*log(1-(u1^(1/alpha)))
 
 u2 <- runif(noofrand, min=0, max=1)
