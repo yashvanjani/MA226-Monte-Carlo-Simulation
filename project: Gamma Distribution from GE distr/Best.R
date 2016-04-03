@@ -1,3 +1,4 @@
+#r_B is cg(x) of acceptance-rejection method
 r_B<-function(x,alpha)
 {
 	d<-0.07+(0.75*sqrt(1-alpha))
@@ -11,18 +12,31 @@ r_B<-function(x,alpha)
 		return((alpha*exp(-x))/(b*d))
 	}
 }
-alpha<-0.7 # arbitrary
+#f is f(x) of acceptance-rejection method
+f<-function(x,alpha)
+{
+	return(exp(-x)/gamma(alpha)*x^(alpha-1))
+}
+alpha<-0.4 # 0<alpha<=1
+gamma_alpha<-gamma(alpha)
 d<-0.07+(0.75*sqrt(1-alpha))
 NoOfRand<-10000
 gammadist<-vector("numeric")
 j<-0
 for (i in 1:NoOfRand) 
 {
-	u<-runif(1)
+	u<-runif(1,min=0,max=(((d^alpha)/(alpha*gamma_alpha))+(exp(-d)*(d^(alpha-1))/gamma_alpha)))
 	v<-runif(1)
-	x<-(-1)*log(1-((u)^(1/alpha)))
-	r=r_B(x,alpha)
-	if(v<=x)
+	if(u<=((d^alpha)/(alpha*gamma_alpha)))
+	{
+		x<-(alpha*gamma_alpha*u)^(1/alpha)
+	}
+	else
+	{
+		x<-(-1)*log((((d^alpha)-(alpha*gamma_alpha*u))/(alpha*d^(alpha-1)))+(exp(-d)))
+	}
+	r=f(x,alpha)/r_B(x,alpha)
+	if(v<=r)
 	{
 		j<-j+1
 		gammadist[j]=x
