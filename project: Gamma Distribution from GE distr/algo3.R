@@ -1,6 +1,6 @@
 noofrand <- 10000
 
-alpha <- 0.5
+alpha <- 0.4
 
 d <- 1.0344 - 0.0766*exp(2.2942*alpha)
 a <- (2^alpha)*((1-exp(-0.5*d))^alpha)
