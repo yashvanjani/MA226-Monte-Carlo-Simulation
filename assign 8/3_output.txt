@@ -1,0 +1,23 @@
+I_ 100  =  1.877849 
+var_ 100  =  0.002499348 
+min_ 100  =  0.5927332 
+max_ 100  =  0.6122307 
+Percentage of variance reduction for  100  random numbers =  98.70001 
+
+I_ 1000  =  1.97944 
+var_ 1000  =  0.002635716 
+min_ 1000  =  0.6537804 
+max_ 1000  =  0.660112 
+Percentage of variance reduction for  1000  random numbers =  98.59785 
+
+I_ 10000  =  2.004715 
+var_ 10000  =  0.002702267 
+min_ 10000  =  0.6682152 
+max_ 10000  =  0.6702425 
+Percentage of variance reduction for  10000  random numbers =  98.60314 
+
+I_ 1e+05  =  2.003103 
+var_ 1e+05  =  0.002697464 
+min_ 1e+05  =  0.6679026 
+max_ 1e+05  =  0.6685431 
+Percentage of variance reduction for  1e+05  random numbers =  98.61584 
