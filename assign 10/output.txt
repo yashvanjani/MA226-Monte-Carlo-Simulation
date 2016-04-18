@@ -1,0 +1,53 @@
+1.	For S(t=0) =  1 , mu =  -1 , var =  9e-04 
+	experemntal E[S(5)] =  0.006568828 
+	experemntal Var[S(5)] =  1.110003e-07 
+	theoritical E[S(5)] =  0.006737947 
+	theoritical Var[S(5)] =  2.0476e-07 
+
+2.	For S(t=0) =  1 , mu =  -1 , var =  0.16 
+	experemntal E[S(5)] =  0.007180603 
+	experemntal Var[S(5)] =  3.251476e-05 
+	theoritical E[S(5)] =  0.006737947 
+	theoritical Var[S(5)] =  5.563947e-05 
+
+3.	For S(t=0) =  1 , mu =  -1 , var =  0.64 
+	experemntal E[S(5)] =  0.001537008 
+	experemntal Var[S(5)] =  3.101096e-06 
+	theoritical E[S(5)] =  0.006737947 
+	theoritical Var[S(5)] =  0.001068375 
+
+4.	For S(t=0) =  1 , mu =  0.1 , var =  1e-04 
+	experemntal E[S(5)] =  1.650138 
+	experemntal Var[S(5)] =  0.0006058354 
+	theoritical E[S(5)] =  1.648721 
+	theoritical Var[S(5)] =  0.001359481 
+
+5.	For S(t=0) =  1 , mu =  0.1 , var =  0.16 
+	experemntal E[S(5)] =  1.965153 
+	experemntal Var[S(5)] =  3.815481 
+	theoritical E[S(5)] =  1.648721 
+	theoritical Var[S(5)] =  3.331366 
+
+6.	For S(t=0) =  1 , mu =  0.1 , var =  0.36 
+	experemntal E[S(5)] =  2.060723 
+	experemntal Var[S(5)] =  13.35654 
+	theoritical E[S(5)] =  1.648721 
+	theoritical Var[S(5)] =  13.72636 
+
+7.	For S(t=0) =  1 , mu =  1.2 , var =  9e-04 
+	experemntal E[S(5)] =  389.121 
+	experemntal Var[S(5)] =  759.7764 
+	theoritical E[S(5)] =  403.4288 
+	theoritical Var[S(5)] =  734.0469 
+
+8.	For S(t=0) =  1 , mu =  1.2 , var =  0.16 
+	experemntal E[S(5)] =  481.3793 
+	experemntal Var[S(5)] =  143927.7 
+	theoritical E[S(5)] =  403.4288 
+	theoritical Var[S(5)] =  199462.7 
+
+9.	For S(t=0) =  1 , mu =  1.2 , var =  0.36 
+	experemntal E[S(5)] =  343.1025 
+	experemntal Var[S(5)] =  77828.83 
+	theoritical E[S(5)] =  403.4288 
+	theoritical Var[S(5)] =  821854.3 
