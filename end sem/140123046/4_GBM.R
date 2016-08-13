@@ -1,0 +1,33 @@
+mu<- 0.2
+sigma<- 0.1
+n<-5000
+S<-vector("numeric")
+S[1]=100
+t<-vector("numeric")
+t[1]=0
+for(i in 2:n)
+{
+	t[i]=t[i-1]+0.001
+}
+S5<-vector("numeric")
+png("4_GBM.png")
+for(j in 1:10)
+{
+	Z<-rnorm(5000)
+	for(i in 2:n)
+	{
+		S[i]=(S[i-1]*exp((0.001*(mu-(sigma*sigma/2)))+(sigma*sqrt(0.001)*Z[i])))
+	}
+	if(j==1)
+	{
+		plot(t,S, col="black")
+	}
+	else
+	{
+		lines(t,S,col=j+1)
+	}
+	S5[j]=S[5000]
+}
+cat("Mean of S(5) = ",mean(S5),"\n")
+cat("Variance of S(5) = ",var(S5),"\n")
+

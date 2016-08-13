@@ -1,0 +1,58 @@
+For n=100
+
+Using Naive Monte Carlo:
+
+Estimate of the integral is =  0.58 
+Variance =  0.2425251 
+
+Using Anithletic variates:
+
+Estimate of the integral is =  0.65 
+Variance =  0.1031107 
+Percentage variance reduction =  56.30866 
+
+Using Control variates:
+
+Estimate of the integral is =  0.76 
+Variance =  0.1786065 
+Percentage variance reduction =  0.3529411 
+
+For n=1000
+
+Using Naive Monte Carlo:
+
+Estimate of the integral is =  0.681 
+Variance =  0.1883295 
+
+Using Anithletic variates:
+
+Estimate of the integral is =  0.695 
+Variance =  0.08784917 
+Percentage variance reduction =  51.92008 
+
+Using Control variates:
+
+Estimate of the integral is =  0.693 
+Variance =  0.2011537 
+Percentage variance reduction =  0.002714776 
+
+For n=10000
+
+Using Naive Monte Carlo:
+
+Estimate of the integral is =  0.6912 
+Variance =  0.1812871 
+
+Using Anithletic variates:
+
+Estimate of the integral is =  0.6858 
+Variance =  0.09034357 
+Percentage variance reduction =  50.35888 
+
+Using Control variates:
+
+Estimate of the integral is =  0.6909 
+Variance =  0.1852107 
+Percentage variance reduction =  0.0007828613 
+
+

@@ -1,0 +1,34 @@
+U<-runif(1000)
+V<-runif(1000)
+A<-runif(1000)
+X<-vector("numeric")
+Y<-vector("numeric")
+Z<-vector("numeric")
+W<-vector("numeric")
+for(i in 1:1000)
+{
+	X[i]=-log(1-U[i])
+}
+c<-exp(0.25)
+j<-0
+for(i in 1:1000)
+{
+	if(V[i]<=(exp(X[i]-(X[i]*X[i]))/c))
+	{
+		j=j+1
+		Y[j]<-X[i]
+	}
+}
+for(i in 1:j)
+{
+	Z[i]=2*exp(-2*A[i])
+}
+a<-(-1)*cov(Y,Z)/var(Z)
+for(i in 1:j)
+{
+	W[i]=Y[i]+a*(Z[i]-mean(Z))
+}
+cat("Estimate of the integral is = ",(j/1000),"\n")
+cat("Variance = ",var(W),"\n")
+red<-100*(var(Y)-var(W))/var(Y)
+cat("Percentage variance reduction = ",red,"\n")

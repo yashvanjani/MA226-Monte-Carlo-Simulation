@@ -1,0 +1,19 @@
+Z<-c(0.9597,-1.3404,1.2238,0.2551)
+mu<-c(1,2)
+sigma<-c(2,4)
+corr<-0.05
+
+for(i in 1:4)
+{
+	for(j in 1:4)
+	{
+		X<-mu[1]+(sigma[1]*sigma[1]*Z[i])
+		Y<-mu[2]+(corr*sigma[2]*Z[i])+(sigma[2]*sqrt(1-(corr*corr))*Z[j])
+		if (i!=j)
+		{
+			cat("For Z_1 = ",Z[i]," and Z_2 = ",Z[j],"\n")
+			cat("X = ",X,", Y = ",Y,"\n")
+		}
+	}
+}
+
